@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+pos-desktop/node_modules/
+pos-desktop/dist/
+*.exe
+*.jar
+*.zip
+*.db
+homeware_pos_data.mv.db

@@ -1,0 +1,30 @@
+{
+  "name": "homeware-pos",
+  "version": "1.0.0",
+  "description": "Homeware Point of Sale System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -w"
+  },
+  "build": {
+    "appId": "com.homeware.pos",
+    "productName": "Homeware POS",
+    "win": {
+      "target": "nsis"
+    },
+    "extraFiles": [
+      {
+        "from": "../target/pos-backend-0.0.1-SNAPSHOT.jar",
+        "to": "pos-backend-0.0.1-SNAPSHOT.jar"
+      }
+    ]
+  },
+  "author": "Homeware",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^44.4.3",
+    "electron-builder": "^26.15.3"
+  }
+}
